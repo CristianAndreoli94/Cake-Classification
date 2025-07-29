@@ -5,16 +5,16 @@ Cake‑image classification on 15 categories / 1 800 pictures (224 × 
 Build an image‑based classifier that recognises 15 cake types using a tiny dataset, starting from traditional colour/edge descriptors and ending with CNN transfer‑learning (PVMLNet).
 
 ## 📦 Dataset
-* **Cake set** – 120 RGB images × 15 classes (100 train, 20 test, 224 × 224 px):contentReference[oaicite:6]{index=6}.
+* **Cake set** – 120 RGB images × 15 classes (100 train, 20 test, 224 × 224 px).
 * Total: **1 800** photos (1 500 train, 300 test).
 
 ## 🛠️ Approaches
 | Stage | Features | Model | Test acc. |
 |-------|----------|-------|-----------|
-| Baseline | Colour histogram (192‑D) | MLP (2 × 5000 ep) | **20.7 %**:contentReference[oaicite:7]{index=7} |
-| Classical fusion | Colour + edge + co‑occ | MLP | **26.7 %** (best combo):contentReference[oaicite:8]{index=8} |
-| CNN transfer | PVMLNet last‑layer activations | Linear | **79.7 %**:contentReference[oaicite:9]{index=9} |
-| **Best** | PVMLNet activations ‑6 | Linear | **90.3 %**:contentReference[oaicite:10]{index=10} |
+| Baseline | Colour histogram (192‑D) | MLP (2 × 5000 ep) | **20.7 %** |
+| Classical fusion | Colour + edge + co‑occ | MLP | **26.7 %** (best combo) |
+| CNN transfer | PVMLNet last‑layer activations | Linear | **79.7 %** |
+| **Best** | PVMLNet activations ‑6 | Linear | **90.3 %** |
 
 ## 🔍 Pipeline
 1. **Low‑level feature extraction** – colour / edge histograms & co‑occurrence matrices.  
